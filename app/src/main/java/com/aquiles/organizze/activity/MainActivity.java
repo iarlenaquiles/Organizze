@@ -1,9 +1,12 @@
-package com.aquiles.organizze;
+package com.aquiles.organizze.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
+import com.aquiles.organizze.R;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 
@@ -47,5 +50,13 @@ public class MainActivity extends IntroActivity {
                 .canGoForward(false)
                 .build()
         );
+    }
+
+    public void btEntrar(View view) {
+        startActivity(new Intent(this, LoginActivity.class));
+    }
+
+    public void btCadastrar(View view) {
+        startActivity(new Intent(this, CadastroActivity.class));
     }
 }
