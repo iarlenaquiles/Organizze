@@ -1,5 +1,6 @@
 package com.aquiles.organizze.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.aquiles.organizze.databinding.ActivityPrincipalBinding;
@@ -30,10 +31,10 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void adicionarDespesa(View view) {
-
+        startActivity(new Intent(this, DespesasActivity.class));
     }
 
     public void adicionarReceita(View view) {
-
+        startActivity(new Intent(this, ReceitasActivity.class));
     }
 }
